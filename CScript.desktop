@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment=Enter filename:
+Icon=text-x-csrc
+Name=C Script
+Type=Link
+URL=source/c_script.c

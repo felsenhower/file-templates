@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment=Enter filename:
+Icon=text-x-c++src
+Name=C++ Script
+Type=Link
+URL=source/cpp_script.cpp
