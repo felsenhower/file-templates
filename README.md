@@ -10,9 +10,9 @@ The files should then appear under "Right click -> Create New" in Dolphin.
 The icons have been hand-selected from the choices that are available on
 Manjaro KDE by default. No guarantee that your system will have them.
 
-# Some useful links
+## Some useful links
 
-## bash
+### bash
 
 * [Bash Strict Mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/)
 * [ShellCheck - A shell script static analysis tool](https://github.com/koalaman/shellcheck)
