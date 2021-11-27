@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Python Script
 Comment=Enter filename:
+Icon=text-x-python3
+Name=Python Script
 Type=Link
 URL=source/python_script.py
-Icon=python
