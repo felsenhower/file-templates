@@ -14,20 +14,43 @@ Manjaro KDE by default. No guarantee that your system will have them.
 
 ### bash
 
+* [bash template](source/bash_script.sh)
+* Use [env](https://unix.stackexchange.com/questions/29608/why-is-it-better-to-use-usr-bin-env-name-instead-of-path-to-name-as-my) instead of bash directly:
 ```bash
 #!/usr/bin/env bash
 ```
-Use [env](https://unix.stackexchange.com/questions/29608/why-is-it-better-to-use-usr-bin-env-name-instead-of-path-to-name-as-my) instead of bash directly.
+* Use [Bash Strict Mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/):
 ```bash
 set -euo pipefail
 IFS=$'\n\t'
 ```
-[Bash Strict Mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/)
+* Automatically check script with [ShellCheck](https://github.com/koalaman/shellcheck). Remove this production:
 ```bash
 shellcheck "$0"
 ```
-Automatically check script with [ShellCheck](https://github.com/koalaman/shellcheck). Remove this production.
+* [Gary Verhaegen – "Bash functions are better than I thought"](https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/)
 
-#### Useful info:
+### C
 
-* [Bash functions are better than I thought](https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/)
+* [C template](source/c_script.c)
+
+### C++
+
+* [C++ template](source/cpp_script.cpp)
+* Do **not** use `using namespace std;` ([isocpp](https://isocpp.org/wiki/faq/coding-standards#using-namespace-std)).
+
+### Python
+
+* [Python template](source/python_script.py)
+* Use [env](https://unix.stackexchange.com/questions/29608/why-is-it-better-to-use-usr-bin-env-name-instead-of-path-to-name-as-my) instead of `python3` directly.
+* Explicitly use `python3`.
+* Use [Type Hints](https://www.python.org/dev/peps/pep-0484/) in order to perform static type checking with [mypy](https://github.com/python/mypy):
+```python
+def main() -> None:
+    pass
+```
+* [Encapsulate code in a `main` function](https://realpython.com/python-main-function/):
+```python
+if __name__ == '__main__':
+    main()
+```
