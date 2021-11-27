@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment=Enter filename:
+Icon=text-x-makefile
+Name=Makefile
+Type=Link
+URL=source/Makefile

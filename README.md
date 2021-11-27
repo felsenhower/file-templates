@@ -39,6 +39,19 @@ shellcheck "$0"
 * [C++ template](source/cpp_script.cpp)
 * Do **not** use `using namespace std;` ([isocpp](https://isocpp.org/wiki/faq/coding-standards#using-namespace-std)).
 
+### Makefile
+
+* [Makefile template](source/Makefile)
+* Use [`.PHONY`](https://stackoverflow.com/questions/2145590/what-is-the-purpose-of-phony-in-a-makefile):
+```makefile
+.PHONY: default all clean
+```
+* Use [`$(RM)`](https://www.google.com/search?client=firefox-b-d&q=make+why+use+%24%28RM%29) in `make clean`:
+```makefile
+clean:
+	$(RM) files
+```
+
 ### Python
 
 * [Python template](source/python_script.py)
@@ -49,7 +62,7 @@ shellcheck "$0"
 def main() -> None:
     pass
 ```
-* [Encapsulate code in a `main` function](https://realpython.com/python-main-function/):
+* Encapsulate code in a  [`main` function](https://realpython.com/python-main-function/):
 ```python
 if __name__ == '__main__':
     main()
