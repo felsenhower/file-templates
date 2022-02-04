@@ -5,4 +5,12 @@ IFS=$'\n\t'
 
 shellcheck "$0"
 
+function cleanup() {
+    true
+}
+
+trap cleanup EXIT
+
 echo 'Hello World!'
+
+# ...
