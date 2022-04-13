@@ -3,7 +3,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-shellcheck "$0"
+[ "${SHELLCHECK:-0}" == "1" ] && shellcheck "$0"
 
 function cleanup() {
     true
